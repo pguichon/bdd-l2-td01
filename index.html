@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>TD 1</section>
+				<section>
+					<ul>
+						<li>Dans un terminal créer un dossier de votre choix et se déplacer dedans</li>
+						<li>Lancer dans un terminal sqlite3</li>
+						<li>executer .help</li>
+						<li>creer une base de donnée </li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>créer un fichier init.sql</li>
+						<li>Dans le fichier coder la requête sql qui permet de créer une table individus
+							avec un id (primary key), sexe (une letre M ou F), un nom ,un prénom et email</li>
+						<li>Créer la requête qui supprime la table individus </li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>créer la table articles : id, code, label, quantity (et la requete qui la suprime</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>dans un fichier data.sql créer les requêtes qui permettent d'insérer des individus</li>
+						<li>même chose pour articles</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Dans un fichier requetes.sql</li>
+						<li>faire des selections sur les individus</li>
+						<li>Faire une selection sur les articles</li>
+						<li>Faire une selection pour compter le nombre de femme et une autre pour les hommes (voir count())</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
